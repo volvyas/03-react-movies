@@ -31,7 +31,7 @@ export default function App() {
           query: query,
         },
       })
-      .catch((error) => {
+      .catch(() => {
         setError(true);
       });
 
