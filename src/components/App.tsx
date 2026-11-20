@@ -66,7 +66,7 @@ export default function App() {
         <MovieModal movie={selectedMovie} onClose={onModalClose} />
       )}
       {isError && <ErrorMessage />}
-      {isLoading && <Loader />}
+      {isLoading && !isError && <Loader />}
     </div>
   );
 }
